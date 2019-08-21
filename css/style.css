@@ -1,0 +1,19 @@
+.bg-lightpurple {
+    background-color: #9D90B7;
+}
+.text-lightpurple {
+    color: #9D90B7;
+}
+
+.bg-lightgrey {
+    background-color: #DAD7DE;
+}
+
+.navbar-brand img {
+    height: 100%;
+    width: 50px;
+}
+
+.social-media-icons {
+    font-size: 2rem;
+}
