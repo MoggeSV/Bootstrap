@@ -1,3 +1,5 @@
+/* COLORS */
+
 .bg-lightpurple {
     background-color: #9D90B7;
 }
@@ -9,11 +11,113 @@
     background-color: #DAD7DE;
 }
 
-.navbar-brand img {
+.text-orange {
+    color: #FF4900;
+}
+
+/* Navigation */
+
+.logotype-img {
     height: 100%;
     width: 50px;
 }
+.logotype-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#logo-carousel {
+    position: relative;
+    z-index: 1;
+    width: 450px;
+}
+
+.navigation-link{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 
 .social-media-icons {
     font-size: 2rem;
 }
+
+.social-media-icons:hover {
+    color: #000;
+}
+
+/* Carousel */
+
+#home-a {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#home-a .gradient {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(248,249,250,1) 20%, rgba(209,155,246,0) 100%);
+    z-index: 2;
+}
+
+.third-slide {
+    color: #000;
+}
+
+.third-slide h2 {
+    font-weight: 700;  
+}
+.third-slide p {
+    font-weight: 600;  
+}
+
+@media (max-width: 576px) {
+    #logo-carousel {
+        width: 250px;
+    }
+    .mobile-welcome {
+        margin-top: 100px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+    #logo-carousel {
+        width: 250px;
+    }
+    .mobile-welcome {
+        margin-top: 100px;
+    }
+
+ }
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+    #logo-carousel {
+        width: 450px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    .logotype-text {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .logotype-img {
+        height: 100%;
+        width: 80px;
+    }
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

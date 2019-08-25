@@ -36,44 +36,163 @@
     <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-             <a class="navbar-brand" href="#"><img src="images/logotype/noun_Vulture_68959.png" alt="" data-toggle="tooltip" data-placement="top" title="Vulture by Yi Chen from the Noun Project"> 
-                <span class="d-inline-block align-top mt-2 ml-3">
-                        VULTURE<strong class="text-lightpurple">PHOTOS</strong>
-                    </span>
+             <a class="navbar-brand" href="#"><img src="images/logotype/noun_Vulture_68959.png" alt="" class="logotype-img" data-toggle="tooltip" data-placement="top" title="Vulture by Yi Chen from the Noun Project"> 
+                
+                
+                <!-- Logo slide -->
+                <div class="d-inline-block align-top mt-2 ml-3">
+                    <div id="logo-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="3000">
+                                <span class="logotype-text">
+                                    VULTURE<strong class="text-info">PHOTOS</strong>
+                                </span>
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                                <span class="logotype-text">
+                                    VULTURE<strong class="text-primary">PHOTOS</strong>
+                                </span>
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                                <span class="logotype-text">
+                                    VULTURE<strong class="text-dark">PHOTOS</strong>
+                                </span>
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                                <span class="logotype-text">
+                                    VULTURE<strong class="text-orange">PHOTOS</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navigation-bar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="container">
-                    <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-              
-                </div>
-                
-              <button class="btn btn-outline-transparent text-lightpurple my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-instagram"></i></button>
-              <button class="btn btn-outline-transparent text-lightpurple my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-facebook-square"></i></button>
-              <button class="btn btn-outline-transparent text-lightpurple my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-facebook-messenger"></i></button>
-              <button class="btn btn-outline-transparent text-lightpurple my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-snapchat-square"></i></button>
-            </div>   
-            </div>
-            
-          </nav>
+                <div class="collapse navbar-collapse" id="navigation-bar">
+                    <div class="container">
+                        <ul class="navbar-nav mr-auto">
+                    <li class="nav-item navigation-link active">
+                    <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item navigation-link">
+                    <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item navigation-link">
+                            <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item navigation-link">
+                            <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                    </div>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-instagram"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-facebook-square"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-facebook-messenger"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-snapchat-square"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons"><i class="fas fa-envelope-square"></i></button>
+                </div>   
+        </div>
+        </nav>
     </section>
 
+    <!-- Carousel -->
+
+    <section id="home-a" class="d-none d-md-block">
+      
+     <div id="home_slider" class="carousel slide carousel-fade" data-ride="carousel">
+
+         <div class="carousel-inner">
+
+             <div class="gradient"></div>
+
+             <ol class="carousel-indicators">
+                 <li data-target="#home_slider" data-slide-to="0" class="active"></li>
+                 <li data-target="#home_slider" data-slide-to="1"></li>
+                 <li data-target="#home_slider" data-slide-to="2"></li>
+             </ol>
+
+
+             <div class="carousel-item active" data-interval="4000">
+                 <img src="images/background/asphalt-bitumen-black-and-white-1038935.jpg" class="d-block" alt="slide 1" >
+                 <div class="carousel-caption d-none d-md-block">
+                        <h2>WELCOME TO VULTURE PHOTOS</h2>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto inventore eum in facilis. Adipisci in praesentium dignissimos corrupti odio.</p>
+                      </div>
+             </div>
+             <div class="carousel-item" data-interval="4000">
+                 <img src="images/background/background-black-and-white-dawn-997443.jpg" class="d-block" alt="slide 2" >
+                 <div class="carousel-caption d-none d-md-block">
+                        <h2>WELCOME TO VULTURE PHOTOS</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, nesciunt!</p>
+                      </div>
+             </div>
+             <div class="carousel-item" data-interval="4000">
+                 <img src="images/background/animals-black-and-white-equine-52500 (1).jpg" class="d-block" alt="slide 3" >
+                 <div class="carousel-caption d-none d-md-block third-slide">
+                        <h2>WELCOME TO VULTURE PHOTOS</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est obcaecati iusto ipsam, laudantium laborum voluptas.</p>
+                      </div>
+             </div>
+         </div>
+     </div>
+ </section>
+<!-- Mobile welcome slides -->
+ <section class="mobile-welcome d-block d-md-none">
+        <div class="d-inline-block align-top mt-2 ml-3">
+                <div id="welcome-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="6000"> 
+                            <div class="container">
+                                <div class="card text-center w-100 bg-lightpurple shadow">
+                                    <div class="card-body">
+                                      <h5 class="card-title">WELCOME TO VULTURE PHOTOS</h5>
+                                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, consectetur. Dicta commodi non in eum ipsam dolores. Fuga, error non?</p>
+                                      <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="6000"> 
+                                <div class="container">
+                                    <div class="card text-center w-100 bg-dark text-light shadow">
+                                        <div class="card-body">
+                                          <h5 class="card-title">WELCOME TO VULTURE PHOTOS</h5>
+                                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, consectetur. Dicta commodi non in eum ipsam dolores. Fuga, error non?</p>
+                                          <a href="#" class="btn btn-primary">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="6000"> 
+                                    <div class="container">
+                                        <div class="card text-center w-100 bg-info shadow">
+                                            <div class="card-body">
+                                              <h5 class="card-title">WELCOME TO VULTURE PHOTOS</h5>
+                                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, consectetur. Dicta commodi non in eum ipsam dolores. Fuga, error non?</p>
+                                              <a href="#" class="btn btn-primary">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                       
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ </section>
+
+ <section id="about-section">
+     <div class="container mt-5">
+         
+     </div>
+     
+ </section>
     <section style="height: 1500px;"></section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
