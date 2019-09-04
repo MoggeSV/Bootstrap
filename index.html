@@ -36,8 +36,8 @@
     <section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-             <a class="navbar-brand" href="#"><img src="images/logotype/noun_Vulture_68959.png" alt="" class="logotype-img" data-toggle="tooltip" data-placement="top" title="Vulture by Yi Chen from the Noun Project"> 
-                
+             <a class="navbar-brand d-none" href="#"><img src="images/logotype/noun_Vulture_68959.png" alt="" class="logotype-img" data-toggle="tooltip" data-placement="top" title="Vulture by Yi Chen from the Noun Project"> 
+             </a>
                 
                 <!-- Logo slide -->
                 <div class="d-inline-block align-top mt-2 ml-3">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-            </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navigation-bar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -86,13 +86,16 @@
                     <li class="nav-item navigation-link">
                             <a class="nav-link" href="#">Contact</a>
                     </li>
+                    <li class="nav-item navigation-link">
+                        <a class="nav-link" href="#">Sign in</a>
+                </li>
                 </ul>
                     </div>
-                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-instagram"></i></button>
-                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons"><i class="fab fa-facebook-square"></i></button>
-                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-facebook-messenger"></i></button>
-                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons d-lg-none"><i class="fab fa-snapchat-square"></i></button>
-                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-4 social-media-icons"><i class="fas fa-envelope-square"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-2 social-media-icons d-lg-none"><i class="fab fa-instagram"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-2 social-media-icons"><i class="fab fa-facebook-square"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-2 social-media-icons d-lg-none"><i class="fab fa-facebook-messenger"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-2 social-media-icons d-lg-none"><i class="fab fa-snapchat-square"></i></button>
+                <button class="btn btn-outline-transparent text-orange my-2 my-sm-0 px-2 social-media-icons"><i class="fas fa-envelope-square"></i></button>
                 </div>   
         </div>
         </nav>
@@ -100,11 +103,11 @@
 
     <!-- Carousel -->
 
-    <section id="home-a" class="d-none d-md-block">
+    <section id="home-a" class="d-none d-sm-block">
       
      <div id="home_slider" class="carousel slide carousel-fade" data-ride="carousel">
 
-         <div class="carousel-inner">
+         <div class="carousel-inner text-center">
 
              <div class="gradient"></div>
 
@@ -117,21 +120,21 @@
 
              <div class="carousel-item active" data-interval="4000">
                  <img src="images/background/asphalt-bitumen-black-and-white-1038935.jpg" class="d-block" alt="slide 1" >
-                 <div class="carousel-caption d-none d-md-block">
+                 <div class="carousel-caption d-none d-sm-block">
                         <h2>WELCOME TO VULTURE PHOTOS</h2>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto inventore eum in facilis. Adipisci in praesentium dignissimos corrupti odio.</p>
                       </div>
              </div>
              <div class="carousel-item" data-interval="4000">
                  <img src="images/background/background-black-and-white-dawn-997443.jpg" class="d-block" alt="slide 2" >
-                 <div class="carousel-caption d-none d-md-block">
+                 <div class="carousel-caption d-none d-sm-block">
                         <h2>WELCOME TO VULTURE PHOTOS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, nesciunt!</p>
                       </div>
              </div>
              <div class="carousel-item" data-interval="4000">
                  <img src="images/background/animals-black-and-white-equine-52500 (1).jpg" class="d-block" alt="slide 3" >
-                 <div class="carousel-caption d-none d-md-block third-slide">
+                 <div class="carousel-caption d-none d-sm-block third-slide">
                         <h2>WELCOME TO VULTURE PHOTOS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est obcaecati iusto ipsam, laudantium laborum voluptas.</p>
                       </div>
@@ -140,8 +143,8 @@
      </div>
  </section>
 <!-- Mobile welcome slides -->
- <section class="mobile-welcome d-block d-md-none">
-        <div class="d-inline-block align-top mt-2 ml-3">
+ <section class="mobile-welcome d-block d-sm-none">
+        <div class="d-inline-block align-top mt-2" id="test">
                 <div id="welcome-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="6000"> 
@@ -274,7 +277,65 @@
     </div>
      
  </section>
-    <section style="height: 1500px;"></section>
+
+ <section id="footer" class="">
+   
+<footer class="page-footer font-small blue pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+ </section>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
