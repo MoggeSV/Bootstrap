@@ -13,10 +13,13 @@
           }
           else {
             form.classList.add('was-validated');
+            localStorage.setItem('email', 'a@a.com');
+            localStorage.setItem('password', 'bytmig123')
             let email = $("#validationTooltipEmail").val();
             let password = $("#validationTooltipPassword").val();
-              if (email == "a@a.com" && password == "bytmig123") {
+              if (email == localStorage.getItem('email') && password == localStorage.getItem('password') || email == localStorage.getItem('newEmail') && password == localStorage.getItem('newPassword') ) {
                 window.location.href = 'profile.html';
+                localStorage.clear();
               }
             console.log(email);
             event.preventDefault();
@@ -28,19 +31,3 @@
       });
     }, false);
   })();
-  
-
- /*  function login() {
-    var email = document.getElementById("validationTooltipEmail").value;
-    var password = document.getElementById("validationTooltipPassword").value;
-
-    if ( email == "a@a.com" && password == "bytmig123"){
-      
-      window.location = "../index.html"; // Redirecting to other page.
-      return false;
-      }
-      else {
-       
-      }
-  }
-  */

@@ -93,6 +93,13 @@
 
 }
 
+/*Login Form*/
+
+.loginForm {
+    margin-top: 200px;
+    height: 50vh;
+}
+
 
 @media (max-width: 770px) {
     .carousel-item {
