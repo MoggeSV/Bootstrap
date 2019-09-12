@@ -9,16 +9,22 @@
           if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
-          }
-          form.classList.add('was-validated');
+          } else {
+            form.classList.add('was-validated');
             let email = $("#validationCustomEmail").val();
             let password = $("#validationCustomPassword").val();
-          localStorage.setItem('newEmail', email);
-          localStorage.setItem('newPassword', password);
+            let firstname = $("#firstName").val();
+            let lastname = $("#lastName").val();
+            localStorage.setItem('name', `${firstname} ${lastname}`);
+            localStorage.setItem('newEmail', email);
+            localStorage.setItem('newPassword', password);
           
              window.location.href = 'login.html';
+          }
           
           
+             event.preventDefault();
+             event.stopPropagation();
         }, false);
       });
     }, false);
